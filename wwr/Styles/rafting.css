@@ -1,0 +1,142 @@
+/* Root pseudo-class for CSS variables */
+:root {
+    --primary-color: #00B4D8; 
+    --secondary-color: #90E0EF; 
+    --background-color: #ffffff; 
+    --text-color: #000000; 
+    --hero-overlay-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+p {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+
+body > * {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header .logo {
+    width: 150px;
+    height: auto;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+.hero {
+    position: relative;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    font-size: 3rem;
+    background-color: var(--hero-overlay-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+article {
+    position: absolute;
+    bottom: 30%;
+    left: 35%;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+article img {
+    float: right;
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+}
+
+
+section h2 {
+    margin-top: 30px;
+    color: var(--secondary-color);
+}
+
+section img {
+    width: calc(100% / 5 - 10px);
+    height: auto;
+    margin: 5px;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a img {
+    display: inline-block;
+    width: 40px;
+    height: auto;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none; /* Removes underline specifically for social media icons */
+}
