@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d9c7ff;
+  }
+  
+  header .logo {
+    width: 100px;
+  }
+  
+  header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  }
+  
+  header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    border: 1px solid #555;
+    background-color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .hero img {
+    margin-top: 20px;
+    max-width: 50%;
+    height: auto;
+  }
+  
+  /* History Section */
+  .history {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .history h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .history-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .history-content img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  /* Adventures Section */
+  .adventures {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .adventures h2 {
+    margin-bottom: 20px;
+  }
+  
+  .adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  .adventure-gallery figure {
+    text-align: center;
+  }
+  
+  .adventure-gallery img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .adventure-gallery figcaption {
+    margin-top: 5px;
+    font-style: italic;
+  }
+  
+  /* Footer */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #d9c7ff;
+  }
+  
+  footer .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  footer .social-icons img {
+    width: 24px;
+    height: 24px;
+  }
+  
